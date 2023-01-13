@@ -84,5 +84,6 @@ function trafficLightChange(){
 }
 
 document.getElementById('btn-change').onclick = function() {
+    doOrNot = false;
     trafficLightChange();
 }
