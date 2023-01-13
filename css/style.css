@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* my-code */
+
+html {
+  background-color: blanchedalmond;
+}
+.block__title {
+  width: 100%;
+  display: flex;
+}
+.title__title {
+  width: 100%;
+  font-size: 100px;
+  text-align: center
+}
+.wrapper {
+  display: flex;
+  margin-top: 10px;
+}
+.traffic-light__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.traffic-light__top{
+  background-color: black;
+  width: 70px;
+  height: 30px;
+  margin-left: 150px;
+}
+.traffic-light__body {
+  position: static;
+  background-color: black;
+  width: 300px;
+  margin: -20px 40px 40px 40px;
+  height: 670px;
+  padding: 20px 0px 0px 0px;
+}
+.traffic-light__circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.traffic-light__circle-yellow, .traffic-light__circle-green{
+  margin-top: 20px;
+}
+.traffic-light__circle-red, .traffic-light__circle-yellow, .traffic-light__circle-green{
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+} 
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.traffic-light__pillar {
+  background-color: black;
+  width: 20px;
+  height: 400px;
+  margin-top: -40px;
+  margin-left: 180px;
+}
+.traffic-light__sole {
+  background-color: black;
+  width: 50px;
+  height: 10px;
+  margin-left: 165.5px;
+}
+.btn-wrapper{
+  display: flex;
+}
+.btn__block {
+  background-color: brown;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  margin-top: 325px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn__block:not(:first-child) {
+  margin-left: 20px;
+}
+.btn__title{
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* adaptive */
+
+@media (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+  .btn__block{
+    margin-top: 90px;
+  }
+}
